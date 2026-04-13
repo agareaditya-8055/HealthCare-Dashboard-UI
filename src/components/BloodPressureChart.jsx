@@ -48,9 +48,6 @@ function BloodPressureChart({ chartData, latestDiagnosis }) {
       maintainAspectRatio: false,
       resizeDelay: 200,
       animation: false,
-      parsing: false,
-      normalized: true,
-      events: [],
       plugins: { legend: { display: false }, tooltip: { enabled: false } },
       scales: {
         x: {
