@@ -1,4 +1,5 @@
 import BloodPressureChart from './BloodPressureChart';
+import { memo } from 'react';
 
 function DiagnosisHistorySection({ chartData, diagnosisCards, latestDiagnosis }) {
   return (
@@ -23,4 +24,4 @@ function DiagnosisHistorySection({ chartData, diagnosisCards, latestDiagnosis })
   );
 }
 
-export default DiagnosisHistorySection;
+export default memo(DiagnosisHistorySection);

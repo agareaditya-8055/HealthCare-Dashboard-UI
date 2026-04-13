@@ -17,7 +17,9 @@ function PatientProfileCard({ profile }) {
       <div className="space-y-6 text-left">
         {rows.map((item) => (
           <div key={item.label} className="flex items-center gap-4">
-            <img src={item.icon} alt="" aria-hidden className="h-10 w-10" />
+            <div className="grid h-11 w-11 place-items-center rounded-full bg-app-bg">
+              <img src={item.icon} alt="" aria-hidden className="h-5 w-5" />
+            </div>
             <div>
               <p className="text-sm text-app-textMuted">{item.label}</p>
               <p className="font-bold">{item.value}</p>

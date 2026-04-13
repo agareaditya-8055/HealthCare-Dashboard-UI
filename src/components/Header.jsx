@@ -8,7 +8,7 @@ const navItems = [
 
 function Header() {
   return (
-    <header className="mb-6 flex items-center justify-between rounded-[70px] border border-app-border bg-app-white px-8 py-3 shadow-card">
+    <header className="mb-6 flex h-[72px] items-center justify-between rounded-[70px] border border-app-border bg-app-white px-8 py-3 shadow-card">
       <div className="flex items-center gap-10">
         <img src="/assets/TestLogo.svg" alt="Tech Care" className="h-10 w-[211px]" />
         <nav className="flex items-center gap-3">

@@ -63,24 +63,26 @@ function DashboardPage() {
   }
 
   return (
-    <main className="min-h-screen bg-app-bg p-6">
-      <Header />
+    <main className="min-h-screen bg-app-bg p-3 xl:p-5">
+      <div className="mx-auto max-w-[1920px]">
+        <Header />
 
-      <div className="grid gap-6 xl:grid-cols-[367px_1fr_367px]">
-        <Sidebar />
+        <div className="grid gap-6 xl:grid-cols-[367px_1fr_367px]">
+          <Sidebar />
 
-        <div className="space-y-6">
-          <DiagnosisHistorySection
-            chartData={chartData}
-            diagnosisCards={diagnosisCards}
-            latestDiagnosis={latestDiagnosis}
-          />
-          <DiagnosticList items={diagnosticList} />
-        </div>
+          <div className="space-y-6">
+            <DiagnosisHistorySection
+              chartData={chartData}
+              diagnosisCards={diagnosisCards}
+              latestDiagnosis={latestDiagnosis}
+            />
+            <DiagnosticList items={diagnosticList} />
+          </div>
 
-        <div className="space-y-6">
-          <PatientProfileCard profile={profile} />
-          <LabResults items={labResults} />
+          <div className="space-y-6">
+            <PatientProfileCard profile={profile} />
+            <LabResults items={labResults} />
+          </div>
         </div>
       </div>
     </main>
