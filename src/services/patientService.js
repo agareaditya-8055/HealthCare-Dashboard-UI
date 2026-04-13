@@ -1,4 +1,4 @@
-const API_URL = 'https://fedskillstest.ct.digital/api/patients';
+const API_URL = 'https://fedskillstest.coalitiontechnologies.workers.dev';
 
 export async function fetchPatients() {
   const credentials = btoa('coalition:skills-test');

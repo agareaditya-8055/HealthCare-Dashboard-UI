@@ -12,6 +12,7 @@ export function useJessicaTaylorData() {
         setIsLoading(true);
         setError('');
         const data = await fetchPatients();
+        console.log('DATA LENGTH : ', data.length);
         const jessicaTaylor = data.find((p) => p.name === 'Jessica Taylor');
         setPatient(jessicaTaylor ?? null);
       } catch (err) {
